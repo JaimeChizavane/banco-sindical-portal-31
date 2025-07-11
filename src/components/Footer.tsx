@@ -17,12 +17,12 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Sindicato Nacional dos Empregados Bancários - Defendendo os direitos 
-              dos trabalhadores bancários há mais de 50 anos.
+              dos trabalhadores bancários desde 1992.
             </p>
             <div className="text-sm text-gray-400">
-              <p>Rua dos Bancários, 123 - Centro</p>
-              <p>São Paulo - SP, CEP 01234-567</p>
-              <p>Tel: (11) 1234-5678</p>
+              <p>Av. Fernão de Magalhães Nº 785 1º Andar</p>
+              <p>Cidade de Maputo</p>
+              <p>Tel: 843286270</p>
               <p>Email: contato@sneb.org.br</p>
             </div>
           </div>

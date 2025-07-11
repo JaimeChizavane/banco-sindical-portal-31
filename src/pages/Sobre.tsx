@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -16,8 +15,8 @@ const Sobre = () => {
       description: 'Líder sindical com ampla experiência em negociações coletivas'
     },
     {
-      name: 'Ana Paula Costa',
-      position: 'Secretária Geral',
+      name: 'Ramiro Simbe',
+      position: 'Secretário Geral',
       description: 'Responsável pela coordenação das atividades administrativas'
     }
   ];
@@ -40,7 +39,7 @@ const Sobre = () => {
                 <p className="text-gray-700 mb-4">
                   O Sindicato Nacional dos Empregados Bancários (SNEB) é uma entidade sindical 
                   que representa os trabalhadores do setor bancário em todo o território nacional. 
-                  Fundado em 1972, somos uma das principais organizações sindicais do país.
+                  Fundado em 08 de dezembro de 1992, somos uma das principais organizações sindicais do país.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Nossa atuação abrange desde a defesa dos direitos trabalhistas até a promoção 
@@ -48,7 +47,7 @@ const Sobre = () => {
                   de trabalho e vida dos bancários brasileiros.
                 </p>
                 <p className="text-gray-700">
-                  Com mais de 50 anos de história, construímos uma trajetória sólida de conquistas 
+                  Com mais de 30 anos de história, construímos uma trajetória sólida de conquistas 
                   e representação efetiva, sendo reconhecidos como uma voz autoritativa no diálogo 
                   com empresas, governo e sociedade civil.
                 </p>
@@ -109,7 +108,7 @@ const Sobre = () => {
                   <p>Associados</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-banking-secondary mb-2">52</div>
+                  <div className="text-3xl font-bold text-banking-secondary mb-2">32</div>
                   <p>Anos de História</p>
                 </div>
                 <div>
