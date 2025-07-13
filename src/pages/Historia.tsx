@@ -36,7 +36,7 @@ const Historia = () => {
                 <p className="text-gray-700 mb-4">
                   Durante a primeira década do século XXI, o SNEB consolidou-se como uma das principais 
                   entidades sindicais de Moçambique, conquistando importantes acordos coletivos e 
-                  expandindo sua atuação para todas as províncias do país.
+                  expandindo sua actuação para todas as províncias do país.
                 </p>
                 <p className="text-gray-700">
                   Foi neste período que estabelecemos nossos principais programas de assistência 
@@ -49,7 +49,7 @@ const Historia = () => {
                   Era Moderna (2010-presente)
                 </h2>
                 <p className="text-gray-700 mb-4">
-                  Na última década, adaptamos nossa atuação aos novos desafios do setor bancário moçambicano, 
+                  Na última década, adaptamos nossa actuação aos novos desafios do sector bancário moçambicano, 
                   incluindo a digitalização, mobile banking, novas formas de trabalho e a necessidade de 
                   capacitação constante dos profissionais bancários.
                 </p>

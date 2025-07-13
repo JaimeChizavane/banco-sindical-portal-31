@@ -22,7 +22,7 @@ const Footer = () => {
               <p>Av. Fernão de Magalhães Nº 785 1º Andar</p>
               <p>Cidade de Maputo</p>
               <p>Tel: 843286270</p>
-              <p>Email: contato@sneb.org.mz</p>
+              <p>Email: contacto@sneb.org.mz</p>
             </div>
           </div>
 

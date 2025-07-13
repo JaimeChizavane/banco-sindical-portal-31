@@ -7,7 +7,7 @@ const Missao = () => {
   const values = [
     {
       title: 'Transparência',
-      description: 'Atuamos com clareza e honestidade em todas as nossas ações e decisões.'
+      description: 'Actuamos com clareza e honestidade em todas as nossas acções e decisões.'
     },
     {
       title: 'Solidariedade',
@@ -23,7 +23,7 @@ const Missao = () => {
     },
     {
       title: 'Ética',
-      description: 'Pautamos nossa atuação por princípios morais sólidos e íntegros.'
+      description: 'Pautamos nossa actuação por princípios morais sólidos e íntegros.'
     },
     {
       title: 'Inovação',
@@ -63,8 +63,8 @@ const Missao = () => {
                 <CardContent className="text-center">
                   <p className="text-lg leading-relaxed">
                     Ser reconhecido como o principal sindicato de bancários do país, 
-                    referência em representação sindical efetiva, inovação em serviços 
-                    aos associados e na construção de um setor bancário mais justo, 
+                    referência em representação sindical efectiva, inovação em serviços 
+                    aos associados e na construção de um sector bancário mais justo, 
                     moderno e humanizado para todos os trabalhadores.
                   </p>
                 </CardContent>
@@ -110,7 +110,7 @@ const Missao = () => {
                     Com a Categoria
                   </h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li>• Negociações coletivas efetivas</li>
+                    <li>• Negociações colectivas efectivas</li>
                     <li>• Programas de capacitação profissional</li>
                     <li>• Promoção da saúde e segurança no trabalho</li>
                     <li>• Luta por melhores condições salariais</li>

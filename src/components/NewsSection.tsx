@@ -7,7 +7,7 @@ const NewsSection = () => {
   const news = [
     {
       id: 1,
-      title: 'Nova Convenção Coletiva 2024 Aprovada',
+      title: 'Nova Convenção Colectiva 2024 Aprovada',
       excerpt: 'Acordos importantes sobre reajuste salarial e benefícios foram estabelecidos para o próximo ano.',
       date: '15 de Dezembro, 2024',
       image: '/placeholder.svg',

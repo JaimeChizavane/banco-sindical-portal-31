@@ -42,7 +42,7 @@ const Sobre = () => {
                   Fundado em 08 de dezembro de 1992, somos uma das principais organizações sindicais de Moçambique.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Nossa atuação abrange desde a defesa dos direitos trabalhistas até a promoção 
+                  Nossa actuação abrange desde a defesa dos direitos trabalhistas até a promoção 
                   de programas de capacitação profissional, sempre buscando melhorar as condições 
                   de trabalho e vida dos bancários moçambicanos.
                 </p>
@@ -80,7 +80,7 @@ const Sobre = () => {
 
             <div className="mb-16">
               <h2 className="text-3xl font-semibold text-banking-primary mb-8 text-center">
-                Nossa Direção
+                Nossa Direcção
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {leadership.map((member, index) => (

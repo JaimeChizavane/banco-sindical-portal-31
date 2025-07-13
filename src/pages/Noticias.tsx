@@ -12,11 +12,11 @@ const Noticias = () => {
   const allNews = [
     {
       id: 1,
-      title: 'Nova Convenção Coletiva 2024 Aprovada',
+      title: 'Nova Convenção Colectiva 2024 Aprovada',
       excerpt: 'Acordos importantes sobre reajuste salarial e benefícios foram estabelecidos para o próximo ano.',
-      content: 'A nova convenção coletiva para 2024 traz importantes conquistas para os bancários...',
+      content: 'A nova convenção colectiva para 2024 traz importantes conquistas para os bancários...',
       date: '15 de Dezembro, 2024',
-      category: 'Convenção Coletiva',
+      category: 'Convenção Colectiva',
       featured: true
     },
     {
@@ -58,7 +58,7 @@ const Noticias = () => {
     {
       id: 6,
       title: 'Mesa de Negociação Permanente',
-      excerpt: 'Estabelecimento de canal direto de diálogo com as instituições bancárias.',
+      excerpt: 'Estabelecimento de canal directo de diálogo com as instituições bancárias.',
       content: 'Foi criada a Mesa de Negociação Permanente...',
       date: '15 de Novembro, 2024',
       category: 'Negociação',

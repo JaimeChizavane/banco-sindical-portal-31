@@ -72,7 +72,7 @@ const Registro = () => {
     
     toast({
       title: "Registro Enviado!",
-      description: "Sua solicitação foi enviada para análise. Você receberá um e-mail em breve.",
+      description: "Sua solicitação foi enviada para análise. Receberá um e-mail em breve.",
     });
 
     // Reset form
@@ -267,7 +267,7 @@ const Registro = () => {
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Convênios Médicos</h4>
+                      <h4 className="font-semibold mb-2">Convénios Médicos</h4>
                       <p className="text-sm text-blue-100">
                         Acesso a planos de saúde com desconto especial
                       </p>
@@ -279,9 +279,9 @@ const Registro = () => {
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Negociação Coletiva</h4>
+                      <h4 className="font-semibold mb-2">Negociação Colectiva</h4>
                       <p className="text-sm text-blue-100">
-                        Participação nos acordos e convenções coletivas
+                        Participação nos acordos e convenções colectivas
                       </p>
                     </div>
                   </CardContent>

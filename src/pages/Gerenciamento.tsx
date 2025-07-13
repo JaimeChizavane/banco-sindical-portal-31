@@ -58,7 +58,7 @@ const Gerenciamento = () => {
   const [newsArticles, setNewsArticles] = useState([
     {
       id: 1,
-      titulo: 'Nova Convenção Coletiva 2024',
+      titulo: 'Nova Convenção Colectiva 2024',
       conteudo: 'Detalhes sobre os acordos estabelecidos...',
       autor: 'Admin',
       dataPublicacao: '2024-12-15',

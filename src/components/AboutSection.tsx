@@ -8,8 +8,8 @@ const AboutSection = () => {
       description: 'Defesa jurídica dos direitos trabalhistas e previdenciários dos bancários',
     },
     {
-      title: 'Negociação Coletiva',
-      description: 'Acordos e convenções coletivas que garantem melhores condições de trabalho',
+      title: 'Negociação Colectiva',
+      description: 'Acordos e convenções colectivas que garantem melhores condições de trabalho',
     },
     {
       title: 'Assistência Social',
@@ -26,11 +26,11 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-banking-accent mb-4">
-            Nossa Atuação
+            Nossa Actuação
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Trabalhamos incansavelmente para garantir os direitos e o bem-estar 
-            de todos os profissionais do setor bancário
+            de todos os profissionais do sector bancário
           </p>
         </div>
 
