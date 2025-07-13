@@ -14,30 +14,37 @@ const Registro = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     nomeCompleto: '',
-    cpf: '',
+    bi: '',
     email: '',
-    telefone: '',
+    telemovel: '',
     banco: '',
     agencia: '',
     cargo: '',
     tempoServico: '',
     endereco: '',
     cidade: '',
-    estado: '',
-    cep: '',
     aceitaTermos: false
   });
 
   const bancos = [
-    'Banco do Brasil',
-    'Caixa Econômica Federal',
-    'Itaú Unibanco',
-    'Bradesco',
-    'Santander',
-    'BTG Pactual',
-    'Banco Safra',
-    'Banco Votorantim',
-    'Banco Pine',
+    'BCI - Banco Comercial e de Investimentos',
+    'BIM - Banco Internacional de Moçambique',
+    'Vista Bank',
+    'FNB - First National Bank',
+    'Access Bank',
+    'Standard Bank',
+    'Socremo',
+    'Ecobank',
+    'Moza Bank',
+    'UBA - United Bank for Africa',
+    'Banco de Moçambique',
+    'SIMO',
+    'BIG - Banco de Investimento Global',
+    'BNI - Banco Nacional de Investimento',
+    'Absa Bank',
+    'NedBank',
+    'Bayport',
+    'MyBucks Banking Corporation',
     'Outro'
   ];
 
@@ -71,17 +78,15 @@ const Registro = () => {
     // Reset form
     setFormData({
       nomeCompleto: '',
-      cpf: '',
+      bi: '',
       email: '',
-      telefone: '',
+      telemovel: '',
       banco: '',
       agencia: '',
       cargo: '',
       tempoServico: '',
       endereco: '',
       cidade: '',
-      estado: '',
-      cep: '',
       aceitaTermos: false
     });
   };
@@ -118,14 +123,14 @@ const Registro = () => {
                           />
                         </div>
                         <div>
-                          <Label htmlFor="cpf">CPF *</Label>
+                          <Label htmlFor="bi">BI (Bilhete de Identidade) *</Label>
                           <Input
-                            id="cpf"
+                            id="bi"
                             type="text"
                             required
-                            placeholder="000.000.000-00"
-                            value={formData.cpf}
-                            onChange={(e) => handleInputChange('cpf', e.target.value)}
+                            placeholder="000000000000A"
+                            value={formData.bi}
+                            onChange={(e) => handleInputChange('bi', e.target.value)}
                           />
                         </div>
                       </div>
@@ -142,14 +147,14 @@ const Registro = () => {
                           />
                         </div>
                         <div>
-                          <Label htmlFor="telefone">Telefone *</Label>
+                          <Label htmlFor="telemovel">Telemóvel *</Label>
                           <Input
-                            id="telefone"
+                            id="telemovel"
                             type="tel"
                             required
-                            placeholder="(11) 99999-9999"
-                            value={formData.telefone}
-                            onChange={(e) => handleInputChange('telefone', e.target.value)}
+                            placeholder="+258 84 000 0000"
+                            value={formData.telemovel}
+                            onChange={(e) => handleInputChange('telemovel', e.target.value)}
                           />
                         </div>
                       </div>
@@ -218,39 +223,16 @@ const Registro = () => {
                         />
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div>
-                          <Label htmlFor="cidade">Cidade *</Label>
-                          <Input
-                            id="cidade"
-                            type="text"
-                            required
-                            value={formData.cidade}
-                            onChange={(e) => handleInputChange('cidade', e.target.value)}
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="estado">Estado *</Label>
-                          <Input
-                            id="estado"
-                            type="text"
-                            required
-                            placeholder="Ex: SP"
-                            value={formData.estado}
-                            onChange={(e) => handleInputChange('estado', e.target.value)}
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="cep">CEP *</Label>
-                          <Input
-                            id="cep"
-                            type="text"
-                            required
-                            placeholder="00000-000"
-                            value={formData.cep}
-                            onChange={(e) => handleInputChange('cep', e.target.value)}
-                          />
-                        </div>
+                      <div>
+                        <Label htmlFor="cidade">Cidade *</Label>
+                        <Input
+                          id="cidade"
+                          type="text"
+                          required
+                          placeholder="Ex: Maputo, Beira, Nampula"
+                          value={formData.cidade}
+                          onChange={(e) => handleInputChange('cidade', e.target.value)}
+                        />
                       </div>
 
                       <div className="flex items-center space-x-2">
@@ -260,7 +242,7 @@ const Registro = () => {
                           onCheckedChange={(checked) => handleInputChange('aceitaTermos', checked as boolean)}
                         />
                         <Label htmlFor="aceitaTermos" className="text-sm">
-                          Aceito os termos e condições do sindicato e autorizo o uso dos meus dados pessoais *
+                          Aceito os termos e condições do sindicato, autorizo o uso dos meus dados pessoais e concordo com o débito de 1% do meu salário para cotas de membro *
                         </Label>
                       </div>
 

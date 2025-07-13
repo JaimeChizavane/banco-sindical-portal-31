@@ -17,7 +17,7 @@ const Gerenciamento = () => {
       id: 1,
       nomeCompleto: 'João Silva Santos',
       email: 'joao.silva@email.com',
-      banco: 'Banco do Brasil',
+      banco: 'BCI',
       cargo: 'Caixa',
       dataRegistro: '2024-12-20',
       status: 'pendente'
