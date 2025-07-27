@@ -12,29 +12,29 @@ const Noticias = () => {
   const allNews = [
     {
       id: 1,
-      title: 'Nova Convenção Colectiva 2024 Aprovada',
-      excerpt: 'Acordos importantes sobre reajuste salarial e benefícios foram estabelecidos para o próximo ano.',
-      content: 'A nova convenção colectiva para 2024 traz importantes conquistas para os bancários...',
+      title: 'SNEB Inicia Negociações para Novo Acordo Colectivo de Trabalho (ACT)',
+      excerpt: 'O Sindicato Nacional de Empregados Bancários iniciou as negociações com a Associação Moçambicana dos Bancos para o ACT 2025.',
+      content: 'O SNEB iniciou oficialmente as negociações para o novo Acordo Colectivo de Trabalho...',
       date: '15 de Dezembro, 2024',
-      category: 'Convenção Colectiva',
+      category: 'ACT',
       featured: true
     },
     {
       id: 2,
-      title: 'Programa de Capacitação Profissional',
-      excerpt: 'Novos cursos gratuitos disponíveis para associados em parceria com instituições de ensino.',
-      content: 'O SNEB lança novos cursos de capacitação profissional...',
+      title: 'Associação Moçambicana dos Bancos Discute Estratégias para o Sector',
+      excerpt: 'AMB propõe novas medidas para fortalecer o sector bancário nacional e melhorar condições de trabalho.',
+      content: 'A Associação Moçambicana dos Bancos apresentou propostas inovadoras...',
       date: '10 de Dezembro, 2024',
-      category: 'Educação',
+      category: 'AMB',
       featured: false
     },
     {
       id: 3,
-      title: 'Assembleia Geral Extraordinária',
-      excerpt: 'Convocação para discussão de temas importantes relacionados aos direitos dos bancários.',
-      content: 'Fica convocada a Assembleia Geral Extraordinária...',
+      title: 'Expansão da Abrangência: SNEB Integra Mais Bancos e Microbancos',
+      excerpt: 'O sindicato expandiu a sua base para incluir trabalhadores de microbancos e instituições financeiras emergentes.',
+      content: 'O SNEB expandiu significativamente a sua representação...',
       date: '5 de Dezembro, 2024',
-      category: 'Assembleia',
+      category: 'Expansão',
       featured: false
     },
     {

@@ -7,22 +7,22 @@ const NewsSection = () => {
   const news = [
     {
       id: 1,
-      title: 'Nova Convenção Colectiva 2024 Aprovada',
-      excerpt: 'Acordos importantes sobre reajuste salarial e benefícios foram estabelecidos para o próximo ano.',
+      title: 'SNEB Inicia Negociações para Novo Acordo Colectivo de Trabalho (ACT)',
+      excerpt: 'O Sindicato Nacional de Empregados Bancários iniciou as negociações com a Associação Moçambicana dos Bancos para o ACT 2025.',
       date: '15 de Dezembro, 2024',
       image: '/placeholder.svg',
     },
     {
       id: 2,
-      title: 'Programa de Capacitação Profissional',
-      excerpt: 'Novos cursos gratuitos disponíveis para associados em parceria com instituições de ensino.',
+      title: 'Associação Moçambicana dos Bancos Discute Estratégias para o Sector',
+      excerpt: 'AMB propõe novas medidas para fortalecer o sector bancário nacional e melhorar condições de trabalho.',
       date: '10 de Dezembro, 2024',
       image: '/placeholder.svg',
     },
     {
       id: 3,
-      title: 'Assembleia Geral Extraordinária',
-      excerpt: 'Convocação para discussão de temas importantes relacionados aos direitos dos bancários.',
+      title: 'Expansão da Abrangência: SNEB Integra Mais Bancos e Microbancos',
+      excerpt: 'O sindicato expandiu a sua base para incluir trabalhadores de microbancos e instituições financeiras emergentes.',
       date: '5 de Dezembro, 2024',
       image: '/placeholder.svg',
     },
