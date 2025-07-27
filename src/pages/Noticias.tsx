@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 
 const Noticias = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -119,8 +120,8 @@ const Noticias = () => {
                         <p className="text-gray-600 mb-4 line-clamp-3">
                           {article.excerpt}
                         </p>
-                        <Button variant="default" size="sm">
-                          Ler Mais
+                        <Button variant="default" size="sm" asChild>
+                          <Link to={`/noticias/${article.id}`}>Ler Mais</Link>
                         </Button>
                       </CardContent>
                     </Card>
@@ -152,8 +153,8 @@ const Noticias = () => {
                       <p className="text-gray-600 mb-4 line-clamp-3">
                         {article.excerpt}
                       </p>
-                      <Button variant="outline" size="sm">
-                        Ler Mais
+                      <Button variant="outline" size="sm" asChild>
+                        <Link to={`/noticias/${article.id}`}>Ler Mais</Link>
                       </Button>
                     </CardContent>
                   </Card>

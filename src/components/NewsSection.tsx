@@ -54,8 +54,8 @@ const NewsSection = () => {
                 <p className="text-gray-600 mb-4 line-clamp-3">
                   {article.excerpt}
                 </p>
-                <Button variant="outline" size="sm">
-                  Ler Mais
+                <Button variant="outline" size="sm" asChild>
+                  <Link to={`/noticias/${article.id}`}>Ler Mais</Link>
                 </Button>
               </CardContent>
             </Card>
