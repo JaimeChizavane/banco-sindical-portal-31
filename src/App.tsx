@@ -10,7 +10,7 @@ import Sobre from "./pages/Sobre";
 import Missao from "./pages/Missao";
 import Noticias from "./pages/Noticias";
 import NoticiasDetalhes from "./pages/NoticiasDetalhes";
-import Registro from "./pages/Registro";
+import Registo from "./pages/Registo";
 import Login from "./pages/Login";
 import Gerenciamento from "./pages/Gerenciamento";
 import NotFound from "./pages/NotFound";
@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/missao" element={<Missao />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/noticias/:id" element={<NoticiasDetalhes />} />
-          <Route path="/registro" element={<Registro />} />
+          <Route path="/registo" element={<Registo />} />
           <Route path="/login" element={<Login />} />
           <Route path="/gerenciamento" element={<Gerenciamento />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

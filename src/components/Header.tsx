@@ -15,7 +15,7 @@ const Header = () => {
     { name: 'Sobre', href: '/sobre' },
     { name: 'Missão & Visão', href: '/missao' },
     { name: 'Notícias', href: '/noticias' },
-    { name: 'Registro', href: '/registro' },
+    { name: 'Registo', href: '/registo' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -26,7 +26,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/1ac2d6b3-d0ed-4208-9a14-5f126ea370aa.png" 
+              src="/lovable-uploads/logosneb.png" 
               alt="SNEB Logo" 
               className="h-12 w-12 object-contain"
             />
