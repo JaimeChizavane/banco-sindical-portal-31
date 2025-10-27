@@ -21,14 +21,14 @@ const HeroSection = () => {
           <div className="text-center lg:text-left text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
               Sindicato Nacional dos
-              <span className="block text-banking-secondary">Empregados Bancários</span>
+              <span className="block text-banking-secondary">Empregados Bancários (SNEB)</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-yellow-100 animate-slide-in">
-              Defendendo os direitos e interesses dos trabalhadores bancários há mais de 50 anos
+              Defendendo os direitos e interesses dos trabalhadores bancários há mais de 30 anos
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
               <Button asChild size="lg" className="bg-banking-secondary hover:bg-yellow-600 text-black font-semibold">
-                <Link to="/registro">Associe-se Agora</Link>
+                <Link to="/registo">Filie-se Agora</Link>
               </Button>
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white">
                 <Link to="/sobre">Saiba Mais</Link>

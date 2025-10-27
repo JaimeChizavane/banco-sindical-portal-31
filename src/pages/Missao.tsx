@@ -44,28 +44,22 @@ const Missao = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
               <Card className="bg-gradient-to-br from-banking-primary to-blue-700 text-white">
                 <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-3xl font-bold mb-4">Nossa Missão</CardTitle>
+                  <CardTitle className="text-3xl font-bold mb-4">Missão</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-lg leading-relaxed">
-                    Defender e promover os direitos dos trabalhadores bancários, 
-                    garantindo condições dignas de trabalho, desenvolvimento profissional 
-                    e bem-estar social, através de uma representação sindical forte, 
-                    democrática e comprometida com a justiça social.
+                    Assegurar a defesa dos legítimos direitos e interesses profissionais, económicos e morais contribuindo deste modo para criação de uma sociedade mais justa, de bem-estar e progresso social.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-gradient-to-br from-banking-secondary to-yellow-600 text-banking-accent">
                 <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-3xl font-bold mb-4">Nossa Visão</CardTitle>
+                  <CardTitle className="text-3xl font-bold mb-4">Visão</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-lg leading-relaxed">
-                    Ser reconhecido como o principal sindicato de bancários do país, 
-                    referência em representação sindical efectiva, inovação em serviços 
-                    aos associados e na construção de um sector bancário mais justo, 
-                    moderno e humanizado para todos os trabalhadores.
+                    Todos os trabalhadores que exerçam actividade profissional em instituições de crédito ou similares, públicas ou privadas em Moçambique gozam em pleno os seus direitos, com todos os seus interesses salvaguardados e participam activamente no movimento sindical a nível nacional, regional e internacional.
                   </p>
                 </CardContent>
               </Card>
