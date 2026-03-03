@@ -1,9 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import MozambiqueMap from '@/components/MozambiqueMap';
+import AnimatedCounter from '@/components/AnimatedCounter';
+import { Users, MapPin, Building2, FileCheck } from 'lucide-react';
 
 const Sobre = () => {
-
   return (
     <div className="min-h-screen">
       <Header />
@@ -29,6 +31,31 @@ const Sobre = () => {
               </p>
             </div>
 
+            {/* Mapa de Moçambique */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-semibold text-banking-primary mb-8 text-center">
+                Presença Nacional
+              </h2>
+              <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+                O SNEB está presente em todas as 11 províncias de Moçambique. Passe o cursor sobre cada província para ver o número de membros.
+              </p>
+              <MozambiqueMap />
+            </div>
+
+            {/* Nossos Números animados */}
+            <div className="bg-gradient-to-r from-banking-dark via-banking-accent to-banking-dark rounded-2xl mb-16 overflow-hidden">
+              <h2 className="text-3xl font-semibold text-white pt-10 text-center">
+                Nossos Números
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4">
+                <AnimatedCounter end={3250} label="Membros" icon={<Users className="h-8 w-8" />} />
+                <AnimatedCounter end={11} label="Províncias" icon={<MapPin className="h-8 w-8" />} />
+                <AnimatedCounter end={24} label="Instituições Bancárias Representadas" icon={<Building2 className="h-8 w-8" />} />
+                <AnimatedCounter end={18} label="Acordos Colectivos Negociados" icon={<FileCheck className="h-8 w-8" />} />
+              </div>
+            </div>
+
+            {/* Estrutura */}
             <div className="mb-12">
               <h2 className="text-2xl font-semibold text-banking-primary mb-6">
                 Nossa Estrutura
@@ -137,30 +164,6 @@ const Sobre = () => {
                     <p className="text-banking-secondary font-medium">Secretário para a Área dos Assuntos Jurídicos Laborais</p>
                   </CardHeader>
                 </Card>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-banking-primary to-blue-700 text-white p-8 rounded-lg">
-              <h2 className="text-2xl font-semibold mb-4 text-center">
-                Nossos Números
-              </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-banking-secondary mb-2">5K+</div>
-                  <p>Associados</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-banking-secondary mb-2">32</div>
-                  <p>Anos de História</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-banking-secondary mb-2">11</div>
-                  <p>Províncias</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-banking-secondary mb-2">100+</div>
-                  <p>Acordos Coletivos</p>
-                </div>
               </div>
             </div>
           </div>

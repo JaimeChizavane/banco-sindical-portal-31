@@ -46,8 +46,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 space-y-2">
           <p>&copy; 2024 Sindicato Nacional dos Empregados Bancários. Todos os direitos reservados.</p>
+          <p className="text-xs text-gray-500">
+            Developed by{' '}
+            <a
+              href="https://ekutiva.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-banking-secondary transition-colors"
+            >
+              eKutiva
+            </a>
+          </p>
         </div>
       </div>
     </footer>
