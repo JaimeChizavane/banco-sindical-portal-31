@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import MozambiqueMap from '@/components/MozambiqueMap';
+
 import AnimatedCounter from '@/components/AnimatedCounter';
 import { Users, MapPin, Building2, FileCheck } from 'lucide-react';
 
@@ -31,16 +31,6 @@ const Sobre = () => {
               </p>
             </div>
 
-            {/* Mapa de Moçambique */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-semibold text-banking-primary mb-8 text-center">
-                Presença Nacional
-              </h2>
-              <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-                O SNEB está presente em todas as 11 províncias de Moçambique. Passe o cursor sobre cada província para ver o número de membros.
-              </p>
-              <MozambiqueMap />
-            </div>
 
             {/* Nossos Números animados */}
             <div className="bg-gradient-to-r from-banking-dark via-banking-accent to-banking-dark rounded-2xl mb-16 overflow-hidden">
