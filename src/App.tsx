@@ -14,6 +14,7 @@ import Registo from "./pages/Registo";
 import Login from "./pages/Login";
 import Gerenciamento from "./pages/Gerenciamento";
 import NotFound from "./pages/NotFound";
+import TawkToWidget from "./components/TawkToWidget";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <TawkToWidget />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
