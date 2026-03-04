@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import Gerenciamento from "./pages/Gerenciamento";
 import NotFound from "./pages/NotFound";
 import TawkToWidget from "./components/TawkToWidget";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <TawkToWidget />
+      <WhatsAppWidget />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />

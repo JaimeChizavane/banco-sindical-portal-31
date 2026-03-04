@@ -1,9 +1,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
 import AnimatedCounter from '@/components/AnimatedCounter';
-import { Users, MapPin, Building2, FileCheck } from 'lucide-react';
+import { Users, MapPin, Building2, FileCheck, BookOpen, Shield, Scale, Wallet } from 'lucide-react';
 
 const Sobre = () => {
   return (
@@ -31,7 +30,6 @@ const Sobre = () => {
               </p>
             </div>
 
-
             {/* Nossos Números animados */}
             <div className="bg-gradient-to-r from-banking-dark via-banking-accent to-banking-dark rounded-2xl mb-16 overflow-hidden">
               <h2 className="text-3xl font-semibold text-white pt-10 text-center">
@@ -39,9 +37,25 @@ const Sobre = () => {
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4">
                 <AnimatedCounter end={3250} label="Membros" icon={<Users className="h-8 w-8" />} />
-                <AnimatedCounter end={11} label="Províncias" icon={<MapPin className="h-8 w-8" />} />
-                <AnimatedCounter end={24} label="Instituições Bancárias Representadas" icon={<Building2 className="h-8 w-8" />} />
-                <AnimatedCounter end={18} label="Acordos Colectivos Negociados" icon={<FileCheck className="h-8 w-8" />} />
+                <AnimatedCounter end={10} label="Províncias" icon={<MapPin className="h-8 w-8" />} />
+                <AnimatedCounter end={25} label="Instituições Bancárias" icon={<Building2 className="h-8 w-8" />} />
+                <AnimatedCounter end={1} label="ACT – Acordo Colectivo de Trabalho" icon={<FileCheck className="h-8 w-8" />} />
+              </div>
+            </div>
+
+            {/* Províncias */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-semibold text-banking-primary mb-6">Representação Provincial</h2>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                {[
+                  'Maputo Cidade', 'Maputo Província', 'Gaza', 'Inhambane', 'Sofala',
+                  'Manica', 'Tete', 'Zambézia', 'Nampula', 'Cabo Delgado'
+                ].map((prov) => (
+                  <div key={prov} className="bg-banking-accent/10 border border-banking-accent/20 rounded-lg p-3 text-center">
+                    <MapPin className="h-4 w-4 text-banking-accent mx-auto mb-1" />
+                    <span className="text-sm font-medium text-banking-dark">{prov}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -54,7 +68,7 @@ const Sobre = () => {
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-banking-accent mb-4">Órgãos Deliberativos</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• <strong>Congresso</strong> – Órgão máximo do sindicato, composto por 60 delegados eleitos e reúne-se de 5 em 5 anos</li>
+                  <li>• <strong>Congresso</strong> – Órgão máximo do sindicato, reúne-se de 5 em 5 anos</li>
                   <li>• <strong>Conselho Nacional</strong></li>
                   <li>• <strong>Conferência Provincial</strong></li>
                   <li>• <strong>Conselho Provincial</strong></li>
@@ -74,14 +88,6 @@ const Sobre = () => {
                   <div className="bg-gray-50 p-6 rounded-lg mb-4">
                     <h5 className="font-semibold text-banking-accent mb-3">Secretariado Nacional</h5>
                     <p className="text-gray-700 mb-3">É o órgão executivo de nível central, composto pelo Secretário geral, que a ele preside e por quatro secretários eleitos pelo Conselho Nacional, estipulado nos estatutos do SNEB do art. 26 a 29.</p>
-                    <p className="text-gray-700 mb-2">Encontra-se estruturada da seguinte forma:</p>
-                    <ul className="space-y-1 text-gray-700 ml-4">
-                      <li>- Área de Organização Sindical</li>
-                      <li>- Área Social</li>
-                      <li>- Área Jurídica e Relações Laborais</li>
-                      <li>- Área de Administração e Finanças</li>
-                      <li>- Área Internacional</li>
-                    </ul>
                   </div>
 
                   <div className="bg-gray-50 p-6 rounded-lg mb-4">
@@ -121,38 +127,71 @@ const Sobre = () => {
               </div>
             </div>
 
+            {/* Secretariado Nacional */}
             <div className="mb-16">
               <h2 className="text-3xl font-semibold text-banking-primary mb-8 text-center">
                 Nosso Secretariado
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card className="text-center">
+
+              {/* Secretário Geral - destaque */}
+              <div className="flex justify-center mb-8">
+                <Card className="text-center max-w-sm w-full border-2 border-banking-secondary shadow-lg">
                   <CardHeader>
                     <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
                     <CardTitle className="text-banking-primary">Ramiro Simbe</CardTitle>
                     <p className="text-banking-secondary font-medium">Secretário Geral</p>
                   </CardHeader>
                 </Card>
-                <Card className="text-center">
-                  <CardHeader>
-                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                    <CardTitle className="text-banking-primary">Nilza Machel</CardTitle>
-                    <p className="text-banking-secondary font-medium">Secretária para a Área de Organização e Formação</p>
+              </div>
+
+              {/* Áreas do Secretariado */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <div className="w-14 h-14 bg-banking-accent/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <BookOpen className="h-7 w-7 text-banking-accent" />
+                    </div>
+                    <CardTitle className="text-base text-banking-primary">Organização e Formação</CardTitle>
                   </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-sm text-gray-500">Secretário para Organização e Formação</p>
+                  </CardContent>
                 </Card>
-                <Card className="text-center">
-                  <CardHeader>
-                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                    <CardTitle className="text-banking-primary">Lídia Timulua</CardTitle>
-                    <p className="text-banking-secondary font-medium">Secretária para a Área Social e Administração e Finanças</p>
+
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <div className="w-14 h-14 bg-banking-accent/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <Shield className="h-7 w-7 text-banking-accent" />
+                    </div>
+                    <CardTitle className="text-base text-banking-primary">Área Social e Massificação</CardTitle>
                   </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-sm text-gray-500">Secretário para Área Social e Massificação</p>
+                  </CardContent>
                 </Card>
-                <Card className="text-center">
-                  <CardHeader>
-                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                    <CardTitle className="text-banking-primary">Mauro Zefanias</CardTitle>
-                    <p className="text-banking-secondary font-medium">Secretário para a Área dos Assuntos Jurídicos Laborais</p>
+
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <div className="w-14 h-14 bg-banking-accent/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <Wallet className="h-7 w-7 text-banking-accent" />
+                    </div>
+                    <CardTitle className="text-base text-banking-primary">Administração e Finanças</CardTitle>
                   </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-sm text-gray-500">Secretário para Administração e Finanças</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <div className="w-14 h-14 bg-banking-accent/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                      <Scale className="h-7 w-7 text-banking-accent" />
+                    </div>
+                    <CardTitle className="text-base text-banking-primary">Área Jurídico-Laboral</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-sm text-gray-500">Secretário para Área Jurídico-Laboral</p>
+                  </CardContent>
                 </Card>
               </div>
             </div>

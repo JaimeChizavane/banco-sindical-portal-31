@@ -21,8 +21,8 @@ const Footer = () => {
             <div className="text-sm text-gray-400">
               <p>Av. Fernão de Magalhães Nº 785 1º Andar</p>
               <p>Cidade de Maputo</p>
-              <p>Tel: 843286270</p>
-              <p>Email: contacto@sneb.org.mz</p>
+              <p>📱 WhatsApp: +258 84 328 6270</p>
+              <p>📧 Email: snebmoz@tvcabo.co.mz</p>
             </div>
           </div>
 
