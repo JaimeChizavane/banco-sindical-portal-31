@@ -51,7 +51,7 @@ const Footer = () => {
           <p className="text-xs text-gray-500">
             Developed by{' '}
             <a
-              href="https://ekutiva.com"
+              href="https://ekutiva.co.mz"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-banking-secondary transition-colors"
