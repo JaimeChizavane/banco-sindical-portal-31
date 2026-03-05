@@ -38,7 +38,7 @@ const Sobre = () => {
               <div className="grid grid-cols-2 md:grid-cols-4">
                 <AnimatedCounter end={3250} label="Membros" icon={<Users className="h-8 w-8" />} />
                 <AnimatedCounter end={10} label="Províncias" icon={<MapPin className="h-8 w-8" />} />
-                <AnimatedCounter end={25} label="Instituições Bancárias" icon={<Building2 className="h-8 w-8" />} />
+                <AnimatedCounter end={26} label="Instituições Bancárias" icon={<Building2 className="h-8 w-8" />} />
                 <AnimatedCounter end={1} label="ACT – Acordo Colectivo de Trabalho" icon={<FileCheck className="h-8 w-8" />} />
               </div>
             </div>
