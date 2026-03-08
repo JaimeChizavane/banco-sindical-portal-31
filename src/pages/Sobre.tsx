@@ -196,6 +196,11 @@ const Sobre = () => {
                 </Card>
               </div>
             </div>
+
+            {/* Parceiros Internacionais */}
+            <div className="mt-16">
+              <PartnersCarousel />
+            </div>
           </div>
         </div>
       </main>
