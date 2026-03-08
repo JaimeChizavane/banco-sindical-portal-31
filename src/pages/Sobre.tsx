@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import PartnersCarousel from '@/components/PartnersCarousel';
 import { Users, MapPin, Building2, FileCheck, BookOpen, Shield, Scale, Wallet } from 'lucide-react';
 
 const Sobre = () => {
@@ -194,6 +195,11 @@ const Sobre = () => {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+
+            {/* Parceiros Internacionais */}
+            <div className="mt-16">
+              <PartnersCarousel />
             </div>
           </div>
         </div>
