@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import AnimatedCounter from '@/components/AnimatedCounter';
 import PartnersCarousel from '@/components/PartnersCarousel';
-import { Users, MapPin, Building2, FileCheck, BookOpen, Shield, Scale, Wallet } from 'lucide-react';
+import { Users, MapPin, Building2, FileCheck, BookOpen, Shield, Scale } from 'lucide-react';
 
 const Sobre = () => {
   return (
@@ -37,11 +37,14 @@ const Sobre = () => {
                 Nossos Números
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4">
-                <AnimatedCounter end={3250} label="Membros" icon={<Users className="h-8 w-8" />} />
-                <AnimatedCounter end={10} label="Províncias" icon={<MapPin className="h-8 w-8" />} />
+                <AnimatedCounter end={6200} label="Membros no Activo" icon={<Users className="h-8 w-8" />} />
+                <AnimatedCounter end={4000} label="Membros Reformados" icon={<Users className="h-8 w-8" />} />
                 <AnimatedCounter end={26} label="Instituições Bancárias" icon={<Building2 className="h-8 w-8" />} />
                 <AnimatedCounter end={1} label="ACT – Acordo Colectivo de Trabalho" icon={<FileCheck className="h-8 w-8" />} />
               </div>
+              <p className="text-white/70 text-sm text-center pb-6 pt-2 px-4">
+                Valores aproximados — cerca de 6.200 membros no activo e mais de 4.000 na situação de reformados
+              </p>
             </div>
 
             {/* Províncias */}
@@ -49,8 +52,8 @@ const Sobre = () => {
               <h2 className="text-2xl font-semibold text-banking-primary mb-6">Representação Provincial</h2>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
                 {[
-                  'Maputo Cidade', 'Maputo Província', 'Gaza', 'Inhambane', 'Sofala',
-                  'Manica', 'Tete', 'Zambézia', 'Nampula', 'Cabo Delgado'
+                  'Maputo', 'Gaza', 'Inhambane', 'Sofala',
+                  'Manica', 'Tete', 'Zambézia', 'Nampula', 'Niassa', 'Cabo Delgado'
                 ].map((prov) => (
                   <div key={prov} className="bg-banking-accent/10 border border-banking-accent/20 rounded-lg p-3 text-center">
                     <MapPin className="h-4 w-4 text-banking-accent mx-auto mb-1" />
@@ -122,9 +125,19 @@ const Sobre = () => {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6 rounded-lg mb-4">
                 <h3 className="text-xl font-semibold text-banking-accent mb-3">O Órgão Fiscalizador</h3>
                 <p className="text-gray-700">Tem como função fiscalizar os actos administrativos e verificar o cumprimento dos deveres legais e estatutários, trazendo mais transparência às actividades e movimentações financeiras do sindicato.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-banking-accent mb-3">Comissões Especializadas</h3>
+                <p className="text-gray-700 mb-4">Actualmente o SNEB conta com 3 Comissões Especializadas, designadamente:</p>
+                <ul className="space-y-3 text-gray-700">
+                  <li>• <strong>GRAM – Grupo de Acção das Mulheres Bancárias</strong> – é uma Comissão Especializada para assuntos da Mulher Bancária;</li>
+                  <li>• <strong>Comissão da Juventude Bancária</strong> – é uma Comissão Especializada para assuntos da Juventude Bancária;</li>
+                  <li>• <strong>Comissão de Reformados Bancários</strong> – é uma Comissão Especializada para assuntos de Reformados Bancários.</li>
+                </ul>
               </div>
             </div>
 
@@ -135,14 +148,72 @@ const Sobre = () => {
               </h2>
 
               {/* Secretário Geral - destaque */}
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-4">
                 <Card className="text-center max-w-sm w-full border-2 border-banking-secondary shadow-lg">
                   <CardHeader>
-                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
+                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-banking-secondary">
+                      <img
+                        src="/lovable-uploads/Secretario-Geral.jpg"
+                        alt="Ramiro Simbe"
+                        className="w-full h-full object-cover"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.classList.add('bg-gray-200'); }}
+                      />
+                    </div>
                     <CardTitle className="text-banking-primary">Ramiro Simbe</CardTitle>
                     <p className="text-banking-secondary font-medium">Secretário Geral</p>
                   </CardHeader>
                 </Card>
+              </div>
+
+              {/* Linha de ligação hierárquica */}
+              <div className="flex justify-center mb-4">
+                <div className="w-px h-8 bg-banking-accent/40"></div>
+              </div>
+              <div className="flex justify-center mb-4">
+                <div className="w-1/2 h-px bg-banking-accent/40"></div>
+              </div>
+
+              {/* Sub-membros: 1.1 e 1.2 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+                <div className="flex flex-col items-center">
+                  <div className="flex justify-center mb-4">
+                    <div className="w-px h-8 bg-banking-accent/40"></div>
+                  </div>
+                  <Card className="text-center w-full hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="w-24 h-24 rounded-full mx-auto mb-3 overflow-hidden border-2 border-banking-accent/30">
+                        <img
+                          src="/lovable-uploads/SAF.jpg"
+                          alt="Nilza Machel"
+                          className="w-full h-full object-cover"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.classList.add('bg-gray-100'); }}
+                        />
+                      </div>
+                      <CardTitle className="text-sm text-banking-primary">Nilza Machel</CardTitle>
+                      <p className="text-xs text-banking-secondary font-medium">Secretária para Organização e Formação</p>
+                    </CardHeader>
+                  </Card>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <div className="flex justify-center mb-4">
+                    <div className="w-px h-8 bg-banking-accent/40"></div>
+                  </div>
+                  <Card className="text-center w-full hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="w-24 h-24 rounded-full mx-auto mb-3 overflow-hidden border-2 border-banking-accent/30">
+                        <img
+                          src="/lovable-uploads/SRB.jpg"
+                          alt="César Santos"
+                          className="w-full h-full object-cover"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.classList.add('bg-gray-100'); }}
+                        />
+                      </div>
+                      <CardTitle className="text-sm text-banking-primary">César Santos</CardTitle>
+                      <p className="text-xs text-banking-secondary font-medium">Coordenadora Nacional de Reformados Bancários</p>
+                    </CardHeader>
+                  </Card>
+                </div>
               </div>
 
               {/* Áreas do Secretariado */}
@@ -173,8 +244,19 @@ const Sobre = () => {
 
                 <Card className="text-center hover:shadow-lg transition-shadow">
                   <CardHeader className="pb-3">
-                    <div className="w-14 h-14 bg-banking-accent/10 rounded-full mx-auto mb-3 flex items-center justify-center">
-                      <Wallet className="h-7 w-7 text-banking-accent" />
+                    <div className="w-14 h-14 overflow-hidden rounded-full mx-auto mb-3">
+                      <img
+                        src="/lovable-uploads/SAF.jpg"
+                        alt="Secretário para Administração e Finanças"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const img = e.target as HTMLImageElement;
+                          img.style.display = 'none';
+                          const parent = img.parentElement!;
+                          parent.classList.add('bg-banking-accent/10', 'flex', 'items-center', 'justify-center');
+                          parent.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-banking-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>';
+                        }}
+                      />
                     </div>
                     <CardTitle className="text-base text-banking-primary">Administração e Finanças</CardTitle>
                   </CardHeader>
